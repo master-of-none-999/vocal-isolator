@@ -2,7 +2,7 @@
 
 只在這台電腦上運行的人聲分離工具。把本機歌曲或影片裡的人聲抽出來，可存成 WAV、FLAC、MP3 或 M4A。
 
-分離方式參考 [karaoke-factory](https://github.com/wongsir1011/karaoke-factory) 的 Demucs 流程：先把媒體解成 44.1 kHz、雙聲道、16-bit PCM，再用 Hybrid Transformer Demucs（`htdemucs`）做分段推論，設定是 1 次時間位移、0.25 重疊。K 歌工房把人聲以外的音軌加總，留下伴奏；這個 App 留下人聲。
+分離方式以 Demucs 流程：先把媒體解成 44.1 kHz、雙聲道、16-bit PCM，再用 Hybrid Transformer Demucs（`htdemucs`）做分段推論，設定是 1 次時間位移、0.25 重疊。K 歌工房把人聲以外的音軌加總，留下伴奏；這個 App 留下人聲。
 
 精確模式改用同一個模型的微調集成版 `htdemucs_ft`。它比較慢，人聲通常更乾淨。
 
